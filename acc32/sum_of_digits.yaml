@@ -1,0 +1,9 @@
+limit: 1000
+memory_size: 8192
+memory_mapped_io:
+  0x80: [-89]
+  0x84: []
+reports:
+  - name: "Result"
+    slice: last
+    view: "Output: {io:0x84:dec}"
