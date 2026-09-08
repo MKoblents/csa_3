@@ -1,6 +1,3 @@
-\ parity.s for f32a
-\ Вычисление битовой четности числа
-
 .text
 .org 0x00
 
@@ -9,7 +6,6 @@ _start:
     parity
     !p 0x84
     halt
-
 parity:
     a!
     0
@@ -23,8 +19,10 @@ parity_loop:
 skip_xor:
     a
     2/
+    0x7FFFFFFF and
     a!
     parity_loop
 parity_done:
     ;
-\https://wrench.edu.swampbuds.me/report/1e7c4cac-c729-40d2-b1fc-0ce8d1e0f56d
+
+\https://wrench.edu.swampbuds.me/report/e0e61c8e-6e0d-4a60-9935-6a410e7a72a0
