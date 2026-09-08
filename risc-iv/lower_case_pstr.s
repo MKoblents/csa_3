@@ -181,3 +181,5 @@ exit_error:
     lw   ra, 0(sp)
     addi sp, sp, 4
     jr   ra
+
+;https://wrench.edu.swampbuds.me/report/a8676833-ad6f-44ef-a50e-72b475c21ee9
