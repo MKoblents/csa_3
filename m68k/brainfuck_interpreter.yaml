@@ -1,9 +1,19 @@
-limit: 10000
+limit: 100000
 memory_size: 8192
+
 memory_mapped_io:
-  0x80: [0x100]
+  0x80: [43, 43, 46, 10]  # ++.\n
   0x84: []
+
 reports:
-  - name: "Result"
+  - name: "Execution trace"
+    slice: all
+    view: |
+      {pc}: {instruction:next} {pc:label}
+
+  - name: "Result verification"
     slice: last
-    view: "Output address: {io:0x84:hex}"
+    view: |
+      Final output at 0x84: {io:0x84:dec}
+    assert: |
+      io:0x84:dec >>> 2
