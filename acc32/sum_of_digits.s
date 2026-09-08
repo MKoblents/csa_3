@@ -1,45 +1,46 @@
-.text
-.org 0x00
-_start:
-    load_addr 0x80 
-    store_addr n 
-    bgez check_zero
 
-    load_imm 0 
-    sub n       
-    store_addr n
+    .text
+    .org         0x00
+_start:
+    load_addr    0x80
+    store_addr   n
+    bgez         check_zero
+
+    load_imm     0
+    sub          n
+    store_addr   n
 
 check_zero:
-    load_imm 0 
-    store_addr sum 
+    load_imm     0
+    store_addr   sum
 
 loop:
-    load_addr n 
-    beqz finish
+    load_addr    n
+    beqz         finish
 
-    rem ten
-    store_addr rem_val
+    rem          ten
+    store_addr   rem_val
 
-    load_addr sum 
-    add rem_val
-    store_addr sum 
+    load_addr    sum
+    add          rem_val
+    store_addr   sum
 
-    load_addr n
-    div ten 
-    store_addr n
+    load_addr    n
+    div          ten
+    store_addr   n
 
-    jmp loop
+    jmp          loop
 
 finish:
-    load_addr sum
-    store_addr 0x84
+    load_addr    sum
+    store_addr   0x84
     halt
 
-.data
-.org 0x90
-n:        .word 0
-sum:      .word 0
-ten:      .word 10
-rem_val:  .word 0
+    .data
+.org             0x90
+n:               .word  0
+sum:             .word  0
+ten:             .word  10
+rem_val:         .word  0
 
-;https://wrench.edu.swampbuds.me/report/add04520-0938-4fe4-9377-6d0bf2ddf8a1
+    ;https://wrench.edu.swampbuds.me/report/add04520-0938-4fe4-9377-6d0bf2ddf8a1
