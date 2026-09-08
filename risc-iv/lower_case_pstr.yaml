@@ -1,0 +1,12 @@
+limit: 2000
+memory_size: 2048
+
+memory_mapped_io:
+  0x80: [0x48, 0x45, 0x4C, 0x4C, 0x4F, 0x0A]  # "HELLO\n"
+  0x84: []
+reports:
+  - name: "Output verification"
+    slice: last
+    view: |
+      Output stream: {io:0x84:hex}
+      Buffer memory: {memory:0x00:0x1f}
