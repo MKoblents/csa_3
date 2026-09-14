@@ -1,38 +1,35 @@
-
     .text
     .org         0x00
 _start:
-    load_addr    0x80
-    store_addr   n
+    load         0x80
+    store        n
     bgez         check_zero
 
     load_imm     0
     sub          n
-    store_addr   n
+    store        n
 
 check_zero:
     load_imm     0
-    store_addr   sum
+    store        sum
 
 loop:
-    load_addr    n
+    load         n
     beqz         finish
 
     rem          ten
-    store_addr   rem_val
+    add          sum
 
-    load_addr    sum
-    add          rem_val
-    store_addr   sum
+    store        sum
 
-    load_addr    n
+    load         n
     div          ten
-    store_addr   n
+    store        n
 
     jmp          loop
 
 finish:
-    load_addr    sum
+    load         sum
     store_addr   0x84
     halt
 
@@ -41,6 +38,8 @@ finish:
 n:               .word  0
 sum:             .word  0
 ten:             .word  10
-rem_val:         .word  0
+
+
+
 
     ;https://wrench.edu.swampbuds.me/report/add04520-0938-4fe4-9377-6d0bf2ddf8a1
