@@ -8,9 +8,9 @@ _start:
 
 main_interpreter:
     link     A6, -8
-    clr.l    -4(A6)
-
-    move.l   0x500, D5
+    move.l   0x500, -4(A6)
+    move.l   0x600, -8(A6)
+    move.l   -4(A6), D5
 read_loop:
     cmp.l    0x540, D5
     bge      err_overflow
@@ -26,8 +26,7 @@ read_loop:
 read_end:
     movea.l  D5, A1
     clr.b    (A1)
-
-    move.l   0x500, D4
+    move.l   -4(A6), D4
     clr.l    D1
 val_loop:
     movea.l  D4, A2
@@ -49,8 +48,9 @@ val_end:
     cmp.l    0, D1
     bne      err_minus_one
 
-    move.l   0x500, D4
-    movea.l  0x600, A3
+    move.l   -4(A6), D4
+    movea.l  -8(A6), A3
+    
     clr.l    D3
 exec_loop:
     movea.l  D4, A2
