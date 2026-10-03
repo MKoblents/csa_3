@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net">
   <diagram name="m68k-neumann-cache RTL" id="rtl1">
-    <mxGraphModel dx="1906" dy="1195" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2420" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="1126" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2420" pageHeight="1000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#000000;strokeWidth=2;fontSize=11;fontColor=#000000;verticalAlign=top;spacingTop=4;" value="" vertex="1">
-          <mxGeometry height="891" width="250" x="40" y="60" as="geometry" />
+        <mxCell id="c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#2D212F);strokeColor=#000000;strokeWidth=2;fontSize=11;fontColor=#000000;verticalAlign=top;spacingTop=4;" value="" vertex="1">
+          <mxGeometry height="917.5" width="250" x="40" y="100.5" as="geometry" />
         </mxCell>
         <mxCell id="c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=10;fontColor=#000000;verticalAlign=top;spacingTop=4;" value="Instruction Decoder&lt;br&gt;(opcode, size, src/dst modes)" vertex="1">
           <mxGeometry height="55" width="210" x="60" y="110" as="geometry" />
@@ -752,37 +752,37 @@
         <mxCell id="c144" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#000000;fontStyle=1;" value="CONTROL OUTPUTS (names on blocks):" vertex="1">
           <mxGeometry height="14" width="183.4" x="55" y="328" as="geometry" />
         </mxCell>
-        <mxCell id="c145" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="pc_latch  mar_latch  mdr_latch" vertex="1">
+        <mxCell id="c145" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;pc_latch  mar_latch  mdr_latch&lt;/font&gt;" vertex="1">
           <mxGeometry height="14" width="163.2" x="55" y="343" as="geometry" />
         </mxCell>
-        <mxCell id="c146" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="mdr_src   src_latch  ext_latch" vertex="1">
+        <mxCell id="c146" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;mdr_src   src_latch  ext_latch&lt;/font&gt;" vertex="1">
           <mxGeometry height="14" width="163.2" x="55" y="358" as="geometry" />
         </mxCell>
-        <mxCell id="c147" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="ext_shift ir_latch   flags_latch" vertex="1">
+        <mxCell id="c147" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;ext_shift ir_latch   flags_latch&lt;/font&gt;" vertex="1">
           <mxGeometry height="14" width="173.3" x="55" y="373" as="geometry" />
         </mxCell>
-        <mxCell id="c148" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="d_we  a_we  rn_sel[1:0]" vertex="1">
+        <mxCell id="c148" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;d_we  a_we  rn_sel[1:0]&lt;/font&gt;" vertex="1">
           <mxGeometry height="14" width="127.9" x="55" y="388" as="geometry" />
         </mxCell>
-        <mxCell id="c149" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="aluA_sel[1:0]  aluB_sel[1:0]" vertex="1">
+        <mxCell id="c149" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;aluA_sel[1:0]  aluB_sel[1:0]&lt;/font&gt;" vertex="1">
           <mxGeometry height="14" width="153.1" x="55" y="403" as="geometry" />
         </mxCell>
-        <mxCell id="c150" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="const_sel[2:0]  alu_op[4:0]" vertex="1">
+        <mxCell id="c150" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;const_sel[2:0]  alu_op[4:0]&lt;/font&gt;" vertex="1">
           <mxGeometry height="14" width="148.1" x="55" y="418" as="geometry" />
         </mxCell>
-        <mxCell id="c151" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="size_op[1:0]  mem_rd  mem_wr" vertex="1">
+        <mxCell id="c151" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;size_op[1:0]  mem_rd  mem_wr&lt;/font&gt;" vertex="1">
           <mxGeometry height="14" width="153.1" x="55" y="433" as="geometry" />
         </mxCell>
-        <mxCell id="c152" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="out_latch  halt" vertex="1">
+        <mxCell id="c152" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=2;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;out_latch  halt&lt;/font&gt;" vertex="1">
           <mxGeometry height="14" width="87.6" x="55" y="448" as="geometry" />
         </mxCell>
         <mxCell id="c153" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#000000;fontStyle=1;" value="CONTROL INPUTS:" vertex="1">
           <mxGeometry height="14" width="87.6" x="55" y="493" as="geometry" />
         </mxCell>
-        <mxCell id="c154" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#000000;fontStyle=0;" value="IR[15:0]  (opcode, size, modes)" vertex="1">
+        <mxCell id="c154" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#000000;fontStyle=0;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;IR[15:0]  (opcode, size, modes)&lt;/font&gt;" vertex="1">
           <mxGeometry height="14" width="168.2" x="55" y="508" as="geometry" />
         </mxCell>
-        <mxCell id="c155" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=0;" value="take   (from Branch Unit)" vertex="1">
+        <mxCell id="c155" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=0;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;take   (from Branch Unit)&lt;/font&gt;" vertex="1">
           <mxGeometry height="14" width="138" x="55" y="523" as="geometry" />
         </mxCell>
         <mxCell id="c156" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;spacingLeft=0;fontSize=9;fontColor=#1565C0;fontStyle=0;" value="ready  (cache: hit or line filled)" vertex="1">

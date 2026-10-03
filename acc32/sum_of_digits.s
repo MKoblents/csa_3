@@ -1,5 +1,5 @@
     .text
-    .org         0x00
+    ;.org         0x00
 _start:
     load         0x80
     store        n
